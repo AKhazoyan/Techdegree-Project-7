@@ -1,0 +1,1 @@
+.alert{display:flex;justify-content:space-between;align-items:center;background-color:#7477BF;color:white;border-radius:5px;margin:12px 12px}.alert p{padding-left:12px}.alert #closebtn{padding-right:12px;cursor:pointer}.alert #closebtn:hover{color:black}.alert #alertword{font-weight:bold}

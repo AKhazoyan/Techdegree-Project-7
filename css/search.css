@@ -1,0 +1,1 @@
+.main-header{display:flex;height:68px}.main-header h2{padding:24px;text-align:center;margin:auto;flex-grow:1}.main-header .main-header-search{display:flex;justify-content:flex-end;background-color:#f0f0f0;flex-grow:8;border:1px solid lightgray}.main-header input{border:1px solid lightgray;border-radius:5px;padding:8px;margin:14px 12px 14px 0;max-width:300px;width:90%}

@@ -1,0 +1,1 @@
+nav{grid-area:nav;background-color:#4D4C72;display:flex;justify-content:center;padding-top:3px}nav img{height:48px;margin:auto 8px;padding:8px 12px;border-radius:10px;transition:background-color .4s}nav img:hover{background-color:#7477BF;border-radius:10px}

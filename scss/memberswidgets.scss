@@ -1,0 +1,50 @@
+.recent-activity,
+.new-members {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        padding-bottom: 0;
+    }
+
+    div {
+        margin: 0 24px;
+    }
+
+    .section-container {
+        display: flex;
+        align-items: center;
+        padding: 24px 0;
+        border-bottom: 1px solid lightgray;
+        &:last-child {
+            border: none;
+        }
+
+        a {
+            display: inline-block;
+            color: #7477BF;
+            text-decoration: none;
+            width: 120px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        a:hover {
+            color: #B2B2B2;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 50px;
+            margin-right: 0;
+        }
+
+        p {
+            margin: 0;
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+/* Traffic Widget */
+.traffic {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 24px;
+
+    .widget-container-full {
+        position: relative;
+    }
+
+    .traffic-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (min-width: 450px) {
+            flex-direction: row;
+        }
+
+        .traffic-nav {
+            display: flex;
+            list-style: none;
+            margin-right: 24px;
+            padding-left: 0;
+
+            li {
+                padding: 10px;
+                margin-left: 4px;
+                cursor: pointer;
+            }
+
+            :hover {
+                color: #81C98F;
+            }
+
+            .activeLi {
+                color: white;
+                background-color: #81C98F;
+                border: none;
+                border-radius: 25px;
+
+                :hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+/* Daily-Traffic & Mobile Users Widgets */
+.daily-traffic,
+.mobile-users {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 24px;
+
+
+    .widget-container-half {
+        position: relative;
+    }
+}

@@ -10,7 +10,7 @@ alertBell.addEventListener('click', function() {
 
 //Alert Bar//
 const alertBar = document.querySelector('.alert');
-const closeButton = document.querySelector('.closebtn');
+const closeButton = document.querySelector('#closebtn');
 
 closeButton.addEventListener('click', function() {
     alertBar.style.display = 'none';
@@ -412,11 +412,18 @@ saveButton.addEventListener('click', function() {
 	window.localStorage.setItem('savedToggleEmail', toggleEmailState);
 	window.localStorage.setItem('savedTogglePublic', togglePublicState);
 	window.localStorage.setItem('savedTimezone', timezoneDropdown.value);
-})
+	alert('Your settings have been saved!');
+});
 
 cancelButton.addEventListener('click', function() {
 	window.localStorage.clear();
-})
+	alert('Your settings have been cleared.');
+	togglePublicState = 'off';
+	document.querySelector('#togglePublic').querySelector('input').checked = false;
+	toggleEmailState = 'off';
+	document.querySelector('#toggleEmail').querySelector('input').checked = false;
+	timezoneDropdown.value = 'default';
+});
 
 // Set Settings on Load
 if (window.localStorage.getItem('savedToggleEmail') == null) {
