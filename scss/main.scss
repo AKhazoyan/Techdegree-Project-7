@@ -46,8 +46,42 @@ main {
 }
 
 
-/* Main Information Grid Layout */
+/* Banner and Main Information Grid Layout */
+//Banner
+.portfolioLinkHeader {
+    background-color: #CD5C5C;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  #profileProjectName {
+    font-weight: bold;
+  }
+  
+  .portfolioLink {
+    color: white;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+  }
+  
+  .portfolioLink:hover {
+    border-color: black;
+  }
+  
+  .portfolioLinkHeader a:hover {
+    color: black;
+  }
+  
+  .portfolioLinkHeader p{
+    color: white;
+    margin: 0;
+    display: inline-block;
+  }
 
+
+//Grid
 .grid-container-main {
     display: grid;
 }
