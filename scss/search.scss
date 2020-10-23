@@ -21,8 +21,28 @@
         border: 1px solid lightgray;
         border-radius: 5px;
         padding: 8px;
-        margin: 14px 12px 14px 0;
+        margin: 14px 0 ;
         max-width: 300px;
         width: 90%;
+    }
+}
+
+#topSearch {
+    display: flex;
+
+    button {
+        border-style: none;
+        margin: auto 8px;
+        padding: 7px 8px 9px 8px;
+
+        &:hover {
+            background-color: gray;
+            color: white;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 450px) {
+            display: none;
+        }
     }
 }
